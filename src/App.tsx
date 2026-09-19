@@ -228,21 +228,47 @@ function WhiteLily() {
       aria-label="White lily"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g fill="#fff" stroke="#eadfe7" strokeWidth="1.5">
-        <path d="M60 58C39 51 27 34 32 15c17 2 28 13 28 34Z" />
-        <path d="M60 58C42 65 23 61 13 45c13-11 29-11 43 1Z" />
-        <path d="M60 58C48 72 30 78 14 69c5-16 18-25 38-23Z" />
-        <path d="M60 58c12 14 30 20 46 11-5-16-18-25-38-23Z" />
-        <path d="M60 58c18 7 37 3 47-13-13-11-29-11-43 1Z" />
-        <path d="M60 58c21-7 33-24 28-43-17 2-28 13-28 34Z" />
-        <path d="M60 58c-9 19-8 38 0 50 8-12 9-31 0-50Z" />
+      <defs>
+        <linearGradient id="lilyPetal" x1="0" y1="0" x2="0.8" y2="1">
+          <stop offset="0" stopColor="#fff" />
+          <stop offset="0.62" stopColor="#fffdfd" />
+          <stop offset="1" stopColor="#f6dce5" />
+        </linearGradient>
+        <linearGradient id="lilyStem" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#6d9a70" />
+          <stop offset="1" stopColor="#b5c99b" />
+        </linearGradient>
+      </defs>
+      <path d="M61 75c-1 13-1 25-2 36" fill="none" stroke="url(#lilyStem)" strokeWidth="4" strokeLinecap="round" />
+      <path d="M59 94c-11-7-19-7-27-2 10 8 18 10 27 7Z" fill="#8cac78" />
+      <g fill="url(#lilyPetal)" stroke="#e8dce5" strokeWidth="1.3" strokeLinejoin="round">
+        <path d="M60 65C42 66 25 59 14 45c15-13 34-9 48 7Z" />
+        <path d="M60 65C43 76 29 77 16 68c6-16 22-23 42-16Z" />
+        <path d="M60 64C51 79 51 91 60 103c9-12 9-24 0-39Z" />
+        <path d="M60 65c18 1 35-6 46-20-15-13-34-9-48 7Z" />
+        <path d="M60 65c17 11 31 12 44 3-6-16-22-23-42-16Z" />
+        <path d="M60 65c9-15 9-31 0-49-12 12-14 29 0 49Z" />
       </g>
-      <circle cx="60" cy="58" r="7" fill="#d8b44f" />
-      <g fill="#b68a37">
-        <circle cx="52" cy="51" r="2" />
-        <circle cx="68" cy="51" r="2" />
-        <circle cx="51" cy="65" r="2" />
-        <circle cx="69" cy="65" r="2" />
+      <path d="M60 69c-7-8-7-15 0-22 7 7 7 14 0 22Z" fill="#f0b8c9" opacity="0.95" />
+      <g stroke="#bd9140" strokeWidth="1.2" strokeLinecap="round">
+        <path d="M56 65 45 48" />
+        <path d="M59 65 54 43" />
+        <path d="M64 65 75 48" />
+        <path d="M61 65 66 43" />
+      </g>
+      <g fill="#d1a54c">
+        <ellipse cx="44.5" cy="47" rx="3" ry="1.8" transform="rotate(28 44.5 47)" />
+        <ellipse cx="53.5" cy="42" rx="3" ry="1.8" transform="rotate(12 53.5 42)" />
+        <ellipse cx="75.5" cy="47" rx="3" ry="1.8" transform="rotate(-28 75.5 47)" />
+        <ellipse cx="66.5" cy="42" rx="3" ry="1.8" transform="rotate(-12 66.5 42)" />
+      </g>
+      <g fill="#d9869e" opacity="0.8">
+        <circle cx="49" cy="57" r="1.3" />
+        <circle cx="52" cy="61" r="1" />
+        <circle cx="71" cy="57" r="1.3" />
+        <circle cx="68" cy="61" r="1" />
+        <circle cx="55" cy="53" r="0.9" />
+        <circle cx="65" cy="53" r="0.9" />
       </g>
     </svg>
   )

@@ -256,9 +256,10 @@ body {
 
 .white-lily {
   display: block;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 7rem;
+  height: 7rem;
   margin: 0 auto;
+  filter: drop-shadow(0 5px 8px rgba(190, 125, 150, 0.28));
 }
 
 .flower-card:hover .flower-icon {
