@@ -152,19 +152,19 @@ export default function App() {
 
         <div className="cards-grid" ref={cardsRef as React.RefObject<HTMLElement>}>
           <FlowerCard
-            emoji="🌹"
+            icon="🌹"
             name="Rose"
             badge="Eternal Love"
             poem="Where words fail, the rose speaks deep crimson devotion, endless and true."
           />
           <FlowerCard
-            emoji="🪷"
+            icon={<WhiteLily />}
             name="Lily"
             badge="Pure Grace"
             poem="Soft as moonlight, gentle as a whisper a lily blooms only for the pure of heart."
           />
           <FlowerCard
-            emoji="🌷"
+            icon="🌷"
             name="Tulip"
             badge="Perfect Love"
             poem="A tulip declares what the heart knows you are the one, wholly and perfectly."
@@ -199,22 +199,51 @@ export default function App() {
 // ── FlowerCard ────────────────────────────────────────────────────────────────
 
 function FlowerCard({
-  emoji,
+  icon,
   name,
   badge,
   poem,
 }: {
-  emoji: string
+  icon: React.ReactNode
   name: string
   badge: string
   poem: string
 }) {
   return (
     <article className="flower-card">
-      <span className="flower-icon">{emoji}</span>
+      <span className="flower-icon">{icon}</span>
       <h3 className="flower-name">{name}</h3>
       <span className="flower-badge">{badge}</span>
       <p className="flower-poem">{poem}</p>
     </article>
+  )
+}
+
+function WhiteLily() {
+  return (
+    <svg
+      className="white-lily"
+      viewBox="0 0 120 120"
+      role="img"
+      aria-label="White lily"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g fill="#fff" stroke="#eadfe7" strokeWidth="1.5">
+        <path d="M60 58C39 51 27 34 32 15c17 2 28 13 28 34Z" />
+        <path d="M60 58C42 65 23 61 13 45c13-11 29-11 43 1Z" />
+        <path d="M60 58C48 72 30 78 14 69c5-16 18-25 38-23Z" />
+        <path d="M60 58c12 14 30 20 46 11-5-16-18-25-38-23Z" />
+        <path d="M60 58c18 7 37 3 47-13-13-11-29-11-43 1Z" />
+        <path d="M60 58c21-7 33-24 28-43-17 2-28 13-28 34Z" />
+        <path d="M60 58c-9 19-8 38 0 50 8-12 9-31 0-50Z" />
+      </g>
+      <circle cx="60" cy="58" r="7" fill="#d8b44f" />
+      <g fill="#b68a37">
+        <circle cx="52" cy="51" r="2" />
+        <circle cx="68" cy="51" r="2" />
+        <circle cx="51" cy="65" r="2" />
+        <circle cx="69" cy="65" r="2" />
+      </g>
+    </svg>
   )
 }
