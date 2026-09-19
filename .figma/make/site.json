@@ -1,0 +1,10 @@
+{
+  "description": "Experience a romantic journey with a beautifully designed single-page website showcasing flowers and heartfelt messages, perfect for expressing love.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
